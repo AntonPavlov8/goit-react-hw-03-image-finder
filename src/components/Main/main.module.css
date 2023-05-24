@@ -1,0 +1,23 @@
+.preloader {
+  margin-top: 20px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.photoList {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.photoList div {
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.photoList div img {
+  height: 150px;
+}
