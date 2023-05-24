@@ -6,7 +6,6 @@ import { Main } from './Main/Main';
 export const App = () => {
   const API_KEY = '35001872-49e302eecfa06fa0b9153d71c';
 
-  const [search, setSearch] = useState(null);
   const [requestData, setRequestData] = useState({ querry: '', total: 0 });
   const [photos, setPhotos] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -38,7 +37,7 @@ export const App = () => {
       }
     };
     fetchData();
-  }, [search, requestData.querry]);
+  }, [requestData.querry]);
 
   return (
     <div>

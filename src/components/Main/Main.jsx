@@ -7,7 +7,7 @@ export const Main = props => {
     <div className={s.photoList}>
       {props.photos.map(photo => (
         <div key={photo.id}>
-          <img src={photo.largeImageURL} />
+          <img src={photo.largeImageURL} alt="" />
         </div>
       ))}
     </div>
