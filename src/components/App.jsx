@@ -13,7 +13,6 @@ export const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      console.log(requestData);
 
       const page = '1';
       try {
@@ -30,10 +29,9 @@ export const App = () => {
         }));
         setPhotos(data.hits);
       } catch (err) {
-        console.log(err);
+        console.error(err);
       } finally {
         setIsLoading(false);
-        console.log(isLoading);
       }
     };
     fetchData();
