@@ -13,6 +13,7 @@ export const HeaderContainer = props => {
   function searchFn(e) {
     e.preventDefault();
     const userInput = e.target.elements.input.value;
+    props.setCurrentPage(1);
     props.setRequestData(prev => ({
       ...prev,
       querry: userInput,
