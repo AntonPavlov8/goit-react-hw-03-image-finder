@@ -26,7 +26,7 @@ export const Main = props => {
   }
 
   function getPhoto(movieId) {
-    const gg = props.photos.filter(movie => movie.id == movieId);
+    const gg = props.photos.filter(movie => movie.id === Number(movieId));
     return gg;
   }
 
